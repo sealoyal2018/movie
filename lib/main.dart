@@ -61,7 +61,10 @@ class AppWindow extends StatelessWidget {
         resizeEdgeColor: Colors.transparent,
         child: Stack(
           children: [
-            Positioned.fill(child: Expanded(child: Shell())),
+            // SizedBox.expand(
+            //   child: Shell(),
+            // ),
+            Positioned.fill(child: Shell()),
             Positioned(
               left: 0,
               top: 0,

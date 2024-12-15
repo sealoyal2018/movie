@@ -36,6 +36,13 @@ class VideoListScreen extends StatelessWidget {
                   video.getPicUrl(),
                   width: double.infinity,
                   fit: BoxFit.cover,
+                  errorBuilder: (c, e, s) {
+                    return Image.asset(
+                      'assets/images/no_pic.png',
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    );
+                  },
                 ),
               ),
               SizedBox(
