@@ -7,8 +7,8 @@ import 'package:window_manager/window_manager.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await windowManager.ensureInitialized();
   MediaKit.ensureInitialized();
+  await windowManager.ensureInitialized();
 
   final option = WindowOptions(
       size: Size(1360, 850),
